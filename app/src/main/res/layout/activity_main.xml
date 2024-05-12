@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Donor Button -->
+        <Button
+            android:id="@+id/btnDonateBlood"
+            style="@style/PremiumButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate Blood"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Request Button -->
+        <Button
+            android:id="@+id/btnRequestBlood"
+            style="@style/PremiumButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Blood"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Additional Options -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Options"
+            android:textSize="20sp"
+            android:textColor="@color/dark_red"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- View Donors Button -->
+            <Button
+                android:id="@+id/btnViewDonors"
+                style="@style/PremiumButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Donors"
+                android:layout_marginEnd="8dp" />
+
+            <!-- View Requests Button -->
+            <Button
+                android:id="@+id/btnViewRequests"
+                style="@style/PremiumButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View Requests" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

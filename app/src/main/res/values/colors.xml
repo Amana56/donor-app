@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#8B0000</color> <!-- Dark red for the app's primary color -->
+    <color name="colorPrimaryDark">#660000</color> <!-- Darker shade for the status bar -->
+    <color name="colorAccent">#FF0000</color> <!-- Bright red accent color for highlights -->
+    <color name="light_red">#FFCCCC</color> <!-- Define your light red color -->
+    <color name="dark_red">#8B0000</color> <!-- Define your dark red color -->
+    <color name="premium_button_end_color">#660000</color> <!-- You can replace the color value with your desired end color -->
+    <color name="premium_button_start_color">#8B0000</color> <!-- You can replace the color value with your desired start color -->
+
+
+
+</resources>
